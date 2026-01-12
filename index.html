@@ -1,23 +1,35 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simulador</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
 </head>
+
 <body>
-  <main>
-    <h1>Simulador</h1>
- 
+    <main>
+        <h1>Simulador</h1>
 
-    <section>
-      
-    </section>
+        <section>
+            <h2>Agregar producto</h2>
 
-    <p><em>Autor:</em> Juan Ignacio Villegas</p>
-  </main>
+            <form id="formProducto">
+                <input type="text" id="nombre" placeholder="Nombre del producto" required>
+                <input type="number" id="precio" placeholder="Precio" required>
+                <button type="submit">Agregar</button>
+            </form>
 
-  <script src="js/main.js"></script>
+            <h2>Carrito</h2>
+            <ul id="listaProductos"></ul>
+
+            <p>Total: $<span id="total">0</span></p>
+        </section>
+
+        <p><em>Autor:</em> Juan Ignacio Villegas</p>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
